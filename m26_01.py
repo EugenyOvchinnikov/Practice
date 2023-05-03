@@ -8,10 +8,10 @@ class Square:
     """ Класс итератор """
     __current_number = 0
 
-    def __init__(self, number: int):
+    def __init__(self, number: int) -> None:
         self.__number = number
 
-    def __iter__(self):
+    def __iter__(self) -> Iterable[int]:
         return self
 
     def __next__(self) -> int:
